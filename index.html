@@ -19,17 +19,27 @@
 <body class="grey lighten-3">
 
   <!-- Navbar -->
-  <nav class="nav-wrapper ">
-    <div class="container">
-      <a href="#!" class="brand-logo">AD</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="nav-wrapper">
+  <div class="container">
+    <a href="#!" class="brand-logo">AD</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Mobile Sidenav -->
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
 
   <!-- Header -->
   <header class="section header-custom white-text center-align">
@@ -204,6 +214,68 @@
       </div>
     </section>
 
+    <!-- Expérience -->
+<section class="section" id="experience">
+  <h3 class="center-align">Expériences Professionnelles</h3>
+  
+  <div class="experience-item">
+    <h5>Ingénieure R&D – Dorreh Sanat Company</h5>
+    <span class="date">2019 – 2021</span>
+    <p>
+      Spécialisée dans l’entretien et la réparation des dispositifs médicaux au laser,
+      ainsi que la programmation des systèmes.
+    </p>
+  </div>
+
+  <div class="experience-item">
+    <h5>Responsable de publicité – Dorreh Sanat Company</h5>
+    <span class="date">2019 – 2021</span>
+    <p>
+      Gestion des campagnes publicitaires, conception des supports visuels
+      (affiches, brochures, contenu digital).
+    </p>
+  </div>
+
+  <div class="experience-item">
+    <h5>Opératrice dispositifs médicaux – Yalda Clinic</h5>
+    <span class="date">2017 – 2019</span>
+    <p>
+      Utilisation de dispositifs laser pour des traitements esthétiques et dermatologiques.
+    </p>
+  </div>
+</section>
+
+
+<!-- Formation -->
+<section class="section" id="formation">
+  <h3 class="center-align">Formation</h3>
+  
+  <div class="formation-item">
+    <h5>EPITECH Strasbourg</h5>
+    <span class="date">2025 – en cours</span>
+    <p>Pré-Master en Informatique. Orientation : MSc Intelligence Artificielle (2026 – 2028)</p>
+  </div>
+
+  <div class="formation-item">
+    <h5>Université de Strasbourg</h5>
+    <span class="date">2023 – 2024</span>
+    <p>Cours de français</p>
+  </div>
+
+  <div class="formation-item">
+    <h5>Complexe Fanni – Iran</h5>
+    <span class="date">2024 – 2025</span>
+    <p>Formation UI/UX Design</p>
+  </div>
+
+  <div class="formation-item">
+    <h5>Université Azad – Téhéran</h5>
+    <span class="date">2017 – 2022</span>
+    <p>Licence en Génie Biomédical</p>
+  </div>
+</section>
+
+
     <!-- Portfolio -->
     <section class="section" id="portfolio">
       <h3 class="center-align">Portfolio</h3>
@@ -316,5 +388,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+</script>
 
 </html>

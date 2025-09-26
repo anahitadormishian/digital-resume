@@ -157,3 +157,152 @@ html {
 .nav-wrapper {
   background: linear-gradient(500deg, #0611a7a4, #070ac7b6, #1028ff); /* گرادینت شیک */
 }
+/* Experience & Formation */
+.experience-item, .formation-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;  
+}
+
+.experience-item:last-child, .formation-item:last-child {
+  border-bottom: none; 
+}
+
+
+
+
+.date {
+  display: block;
+  font-size: ۱rem;
+  color: #383737;
+  margin-top: 4px;  
+  margin-bottom: 8px; 
+  line-height: 1.4;   
+}
+.experience-item h5, .formation-item h5 {
+  margin: 0;
+  margin-bottom: 6px;  
+  font-weight: 600;
+  color: #0d074d;
+  line-height: 1.6;    
+}
+
+
+/* Smartphone (max-width: 767px) */
+@media (max-width: 767px) {
+  body {
+    background: #fefefe;
+  }
+  h3 {
+    font-size: 1.4rem; 
+  }
+  .card-content p {
+    font-size: 0.9rem; 
+  }
+}
+
+/* Tablet (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: #f9f9ff; 
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  .card-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  body {
+    background: #fff; 
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .card-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smartphone (max 767px) */
+@media (max-width: 767px) {
+  h2, h3, h5 {
+    font-size: 1.4rem;
+  }
+
+  .story-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  #skills .col, #portfolio .col {
+    flex: 0 0 100%;   
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+}
+
+/* Tablet (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .story-text {
+    font-size: 1.1rem;
+  }
+
+  #skills .col, #portfolio .col {
+    flex: 0 0 50%;   
+    max-width: 50%;
+  }
+}
+
+/* Desktop (min 1024px) */
+@media (min-width: 1024px) {
+  #skills .col, #portfolio .col {
+    flex: 0 0 33.33%;   
+    max-width: 33.33%;
+  }
+}
+
+
+/* Smartphone */
+@media (max-width: 767px) {
+  #skills .row {
+    display: block;  
+  }
+  #skills .col {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #skills .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skills .col {
+    width: 50% !important;   
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  #skills .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skills .col {
+    width: 33.33% !important;   
+  }
+}
