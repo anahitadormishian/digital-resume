@@ -337,10 +337,14 @@ button:hover, .btn:hover, a:hover {
   background: linear-gradient(90deg, #a9affc, #c1eff1);
   color: #fff !important;
 }
+
+
 h3 {
   position: relative;
-  display: inline-block;
+  display: table;          
+  margin: 0 auto 20px auto; 
   padding-bottom: 5px;
+  text-align: center;
 }
 
 h3::after {
@@ -352,9 +356,11 @@ h3::after {
   height: 3px;
   background: linear-gradient(90deg, #0112ff, #00f2fe);
   transform: scaleX(0);
+  transform-origin: center;  
   transition: transform 0.4s ease;
 }
 
 h3:hover::after {
   transform: scaleX(1);
 }
+
