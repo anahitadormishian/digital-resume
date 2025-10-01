@@ -32,15 +32,44 @@ html {
   to   { opacity: 1; }
 }
 
-/* Profile Card */
-.card-custom {
-  background: linear-gradient(135deg, #0112ff81, #00f2fe); 
-  color: white;
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-.custom-highlight {
-  color: #1d1957;
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 3px solid #8d8fad;
+}
+.profile-info h5 {
+  margin: 0;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #05082e;
 }
+.profile-info p {
+  margin: 5px 0 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+.profile-info .links a {
+  font-weight: bold;
+  color: #353fd1e1;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.profile-info .links a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Links */
 .custom-link {
